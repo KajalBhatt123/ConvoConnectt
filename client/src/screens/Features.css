@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+.features{
+    display: flex;
+    flex-direction: column;
+    background-color:#e6f2ff;
+    margin-bottom: 0px;
+}
+.features>img{
+    height: 35rem;
+    width: 40rem;
+    display:block;
+    margin: auto;
+    border-radius: 20rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    
+}
+.text>p{
+    font-size: 1.5rem;
+    background-color: #003366;
+    padding: 1rem;
+    color: white;
+    width: 35rem;
+    border-radius: 1.6rem;
+    transition: box-shadow 0.3s ease;
+    font-family: Modern Antiqua;
+
+
+}
+.text>p:hover {
+    background-color: #00509e;
+    box-shadow: 0 0 20px rgba(248, 163, 163, 0.8);
+}
+.text p:nth-of-type(even) {
+    align-self: flex-end;
+    margin-right: 15rem;
+}
+
+.text p:nth-of-type(odd) {
+    align-self: flex-start;
+    margin-left: 15rem;
+}
+@media (max-width:1430px){
+    .text>p{
+        font-size: 1rem;
+    }
+        .features>img {
+            height: 25rem;
+            width: 30rem;
+        }
+}
+@media (max-width:1035px) {
+    .text>p {
+        font-size: 1rem;
+        width: 30rem;
+    }
+}
+@media (max-width:850px) {
+    .text>p {
+        font-size: 0.8rem;
+        width: 20rem;
+    }
+
+    .features>img {
+        height: 20rem;
+        width: 25rem;
+    }
+}
+@media (max-width:640px) {
+    .text>p {
+        font-size: 0.6rem;
+        width: 17rem;
+    }
+
+    .features>img {
+        height: 15rem;
+        width: 20rem;
+    }
+}
+@media (max-width:540px) {
+    .text>p {
+        font-size: 0.7rem;
+        width: 14rem;
+        padding: 0.4rem;
+        border-radius: 1.1rem;
+    }
+
+    .features>img {
+        height: 15rem;
+        width: 20rem;
+    }
+.text p:nth-of-type(even) {
+    margin-right: 10rem;
+}
+
+.text p:nth-of-type(odd) {
+    margin-left: 10rem;
+}
+}
+@media (max-width:400px) {
+    .text>p {
+        width: 12rem;
+    }
+
+    .features>img {
+        height: 10rem;
+        width: 15rem;
+        margin-bottom: 2rem;
+    }
+        .text p:nth-of-type(even) {
+            margin-right: 2rem;
+        }
+    
+        .text p:nth-of-type(odd) {
+            margin-left: 2rem;
+        }
+}

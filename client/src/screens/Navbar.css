@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth;
+}
+.navbarr{
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    background-color:#003366 !important;
+}
+.convoconnect{
+    color: rgb(156, 156, 190) !important;
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    margin-left: 1rem;
+}
+.other{
+    position: absolute;
+    right: 30px;
+    display: flex;
+    gap: 7rem;
+}
+.other li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+@media (max-width:500px){
+    .convoconnect {
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+    }
+}

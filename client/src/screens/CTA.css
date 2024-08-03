@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Special+Elite&display=swap');
+.cta{
+    background-color:#e6f2ff ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.cta>p{
+    font-size: 2rem;
+    margin: 10rem;
+    font-family: Special Elite;
+    margin-bottom: 3rem;
+}
+.join{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.join>a>img{
+    height: 4rem;
+}
+.join>a>button{
+    font-family: Silkscreen;
+    font-size: 1.5rem;
+}
+@media (max-width:1350px){
+    .cta>p {
+            font-size: 1.5rem;
+            /* margin: 6rem; */
+            margin-top: 5rem;
+        }
+}
+@media (max-width:1100px) {
+    .join>a>img {
+            height: 3rem;
+        }
+    
+        .join>a>button {
+            font-size: 1rem;
+        }
+}
+@media (max-width:956px) {
+    .cta>p {
+        margin: 6rem;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:742px) {
+    .cta>p {
+        font-size: 1rem;
+    }
+        .join>a>img {
+            height: 2.1rem;
+        }
+    
+        .join>a>button {
+            font-size: 0.7rem;
+        }
+}
+@media (max-width:614px) {
+    .cta>p {
+        margin: 4rem;
+        margin-bottom: 1rem;
+
+    }
+}
