@@ -39,10 +39,16 @@ const RoomPage = () => {
     [socket]
   );
 
+  // Updated sendStreams function
   const sendStreams = useCallback(() => {
-    for (const track of myStream.getTracks()) {
-      peer.peer.addTrack(track, myStream);
-    }
+    if (!myStream) return;
+
+    myStream.getTracks().forEach((track) => {
+      const existingSenders = peer.peer.getSenders().filter((sender) => sender.track === track);
+      if (existingSenders.length === 0) {
+        peer.peer.addTrack(track, myStream);
+      }
+    });
   }, [myStream]);
 
   const handleCallAccepted = useCallback(
@@ -119,13 +125,13 @@ const RoomPage = () => {
         <>
           <h1>My Stream</h1>
           <div className="reactplayer">
-          <ReactPlayer 
-            playing
-            muted
-            height="300px"
-            width="400px"
-            url={myStream}
-          />
+            <ReactPlayer
+              playing
+              muted
+              height="300px"
+              width="400px"
+              url={myStream}
+            />
           </div>
         </>
       )}
